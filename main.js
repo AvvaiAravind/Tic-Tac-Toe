@@ -102,9 +102,10 @@ function GameController(
         console.log("Game ends in draws");
         gameOver = true;
       }
-      1;
+      if (winning === false) {
+        switchPlayerTurn();
+      }
 
-      switchPlayerTurn();
       // playRound(row, column);
     }
     printNewRound();
