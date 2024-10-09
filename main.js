@@ -104,11 +104,11 @@ function GameController(
       }
       if (winning === false) {
         switchPlayerTurn();
+        printNewRound();
       }
 
       // playRound(row, column);
     }
-    printNewRound();
   }
   return {
     getActivePlayer,
